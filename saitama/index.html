@@ -158,6 +158,10 @@ tr:hover { background: #f9fafb; }
 td.name-col { min-width: 120px; max-width: 200px; white-space: normal; word-break: break-all; }
 td.loc-col { min-width: 100px; max-width: 180px; white-space: normal; }
 td.station-col { min-width: 100px; max-width: 180px; white-space: normal; }
+/* Highlight row when navigated to via email deep-link */
+.prop-row:target { animation: row-flash 2s ease; }
+@keyframes row-flash { 0%,20% { background: #e6f7f2; } 100% { background: transparent; } }
+
 .detail-btn {
   display: inline-block; padding: 3px 10px; border-radius: 6px;
   font-size: 10px; font-weight: 600; cursor: pointer; text-decoration: none;
@@ -583,7 +587,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
 </tr></thead>
 <tbody>
 
-<tr>
+<tr id="land-1" class="prop-row">
   <td style="color:var(--muted)">1</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/irumagummoroyamamachi_ct/detail_acd36e29ab3933eb9530a77f33678f23/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -614,7 +618,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-2" class="prop-row">
   <td style="color:var(--muted)">2</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/warabishi_ct/detail_a95f5ac3a51f3838850160ee0e1e2053/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -645,7 +649,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-3" class="prop-row">
   <td style="color:var(--muted)">3</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/koshigayashi_ct/detail_af75fba135e53ffdb71684cce7c92459/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -676,7 +680,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-4" class="prop-row">
   <td style="color:var(--muted)">4</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/tokorozawashi_ct/detail_bcbcb61214983e3ba70437da69582921/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -707,7 +711,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-5" class="prop-row">
   <td style="color:var(--muted)">5</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/hikigunnamegawamachi_ct/detail_936371e233f134abab0422711b70726e/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -738,7 +742,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-6" class="prop-row">
   <td style="color:var(--muted)">6</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/hannoshi_ct/detail_8feb9497eb39315e9f0391239652a194/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -769,7 +773,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-7" class="prop-row">
   <td style="color:var(--muted)">7</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/saitamashinishiku_ct/detail_978d13cd22073e0d91a6a50671de40fa/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -800,7 +804,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-8" class="prop-row">
   <td style="color:var(--muted)">8</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/tokorozawashi_ct/detail_946630f4e4e93b8085d1a49a2832b134/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -831,7 +835,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-9" class="prop-row">
   <td style="color:var(--muted)">9</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/sayamashi_ct/detail_961f48987aee31f09c941aceacfcc6fe/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -862,7 +866,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-10" class="prop-row">
   <td style="color:var(--muted)">10</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/tokorozawashi_ct/detail_9d4d682f1a15312c9e276274e6c36e17/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -893,7 +897,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-11" class="prop-row">
   <td style="color:var(--muted)">11</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/irumashi_ct/detail_98df9b31bc8e3a60be44d71a87ac7499/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -924,7 +928,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-12" class="prop-row">
   <td style="color:var(--muted)">12</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/kawagoeshi_ct/detail_995a478b2c023916a069ce27a20e47dc/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -955,7 +959,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-13" class="prop-row">
   <td style="color:var(--muted)">13</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/kawagoeshi_ct/detail_d2d0303774dc32cda2728c6571944af8/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -986,7 +990,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-14" class="prop-row">
   <td style="color:var(--muted)">14</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/tokorozawashi_ct/detail_1c9e3e08459d3fe2af038de544dbb801/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1017,7 +1021,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-15" class="prop-row">
   <td style="color:var(--muted)">15</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/hasudashi_ct/detail_11b8bdcc6bec3974924890b672e2ece0/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1048,7 +1052,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-16" class="prop-row">
   <td style="color:var(--muted)">16</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/irumashi_ct/detail_4197752d6fa438d3b5e463f7a4a49359/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1079,7 +1083,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-17" class="prop-row">
   <td style="color:var(--muted)">17</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/sakadoshi_ct/detail_3d37ae59a165305ea0dc55194c6f0a76/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1110,7 +1114,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-18" class="prop-row">
   <td style="color:var(--muted)">18</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/kukishi_ct/detail_3d7e0614905e33de9221e523f2e40de7/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1141,7 +1145,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-19" class="prop-row">
   <td style="color:var(--muted)">19</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/saitamashikitaku_ct/detail_2d8993781bb83bd79812f63ca476f595/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1172,7 +1176,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-20" class="prop-row">
   <td style="color:var(--muted)">20</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/saitamashiminamiku_ct/detail_0219868c63c837c1897af8e9f99439a4/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1203,7 +1207,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-21" class="prop-row">
   <td style="color:var(--muted)">21</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/irumagummoroyamamachi_ct/detail_024589e72ae33017b3a9930771394d05/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1234,7 +1238,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-22" class="prop-row">
   <td style="color:var(--muted)">22</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/irumashi_ct/detail_6e5de40e8d423ecf978a0a4231b5cff2/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1265,7 +1269,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-23" class="prop-row">
   <td style="color:var(--muted)">23</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/tokorozawashi_ct/detail_5e7eeaf26f9739da93c3ebf3a906bbad/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1296,7 +1300,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-24" class="prop-row">
   <td style="color:var(--muted)">24</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/saitamashiurawaku_ct/detail_609141c38a4130e88e5746d3a049542e/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1327,7 +1331,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-25" class="prop-row">
   <td style="color:var(--muted)">25</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/irumashi_ct/detail_59cc95ee3b1a3e43894d5d0d6e5abc0d/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1358,7 +1362,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-26" class="prop-row">
   <td style="color:var(--muted)">26</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/tokorozawashi_ct/detail_567a3f69f07132b189712b42fd67d024/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1389,7 +1393,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-27" class="prop-row">
   <td style="color:var(--muted)">27</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/tokorozawashi_ct/detail_53fb386a14ee3af0aef778861a780dc2/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1420,7 +1424,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-28" class="prop-row">
   <td style="color:var(--muted)">28</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/hanyushi_ct/detail_e0b4d5fd5dfb3aeb9023c5e87e026db9/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1451,7 +1455,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-29" class="prop-row">
   <td style="color:var(--muted)">29</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/koshigayashi_ct/detail_ebfb8105d063393faa9694f3c599f332/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1482,7 +1486,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-30" class="prop-row">
   <td style="color:var(--muted)">30</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/saitamashikitaku_ct/detail_f1f0f79b1e43350b8eb585fba38dce6f/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1513,7 +1517,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-31" class="prop-row">
   <td style="color:var(--muted)">31</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/sokashi_ct/detail_f3b1aabd55dd329e92d4a2b160fcf896/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1544,7 +1548,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-32" class="prop-row">
   <td style="color:var(--muted)">32</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/higashimatsuyamashi_ct/detail_e94a393be5243c36863f9a7d381d7f98/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1575,7 +1579,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-33" class="prop-row">
   <td style="color:var(--muted)">33</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/konosushi_ct/detail_69515b8c2b163eb38637777ce2171530/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1606,7 +1610,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-34" class="prop-row">
   <td style="color:var(--muted)">34</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/hannoshi_ct/detail_62a9cfa6798c3b73a6c4dc97e87295ff/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1637,7 +1641,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-35" class="prop-row">
   <td style="color:var(--muted)">35</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/tokorozawashi_ct/detail_6338c4f1aa7d3da3b2d6d3b2eb680262/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1668,7 +1672,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="land-36" class="prop-row">
   <td style="color:var(--muted)">36</td>
   <td><a class="detail-btn" href="https://myhome.nifty.com/tochi/saitama/fujiminoshi_ct/detail_638b46670f2330cbae9e47f4c7d64fde/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -1990,7 +1994,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
 </tr></thead>
 <tbody>
 
-<tr>
+<tr id="mansion-1" class="prop-row">
   <td style="color:var(--muted)">1</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_cb1a18c297663bb6a9e9b147022ab6c9/" target="_blank">詳細</a></td>
   <td class="name-col"><b>キャニオンマンション川口</b></td>
@@ -2016,7 +2020,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-2" class="prop-row">
   <td style="color:var(--muted)">2</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/koshigayashi_ct/mansion_30c5ba4650eee4a5550cdfa16fb4f195/" target="_blank">詳細</a></td>
   <td class="name-col"><b>エム・ブランド越谷GAMO</b></td>
@@ -2042,7 +2046,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-3" class="prop-row">
   <td style="color:var(--muted)">3</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sayamashi_ct/detail_c32eedb5c33532f3b8afdc9478e876e6/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アーベイン狭山705</b></td>
@@ -2068,7 +2072,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-4" class="prop-row">
   <td style="color:var(--muted)">4</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sokashi_ct/detail_c348b2ef11053898b857397d1a7f126b/" target="_blank">詳細</a></td>
   <td class="name-col"><b>草加マンション</b></td>
@@ -2094,7 +2098,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-5" class="prop-row">
   <td style="color:var(--muted)">5</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/misatoshi_ct/detail_c34f85cfe4933b6f94b16804ce059c8d/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県三郷市高州３丁目</b></td>
@@ -2120,7 +2124,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-6" class="prop-row">
   <td style="color:var(--muted)">6</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/shikishi_ct/mansion_8358759c54c72c24cf22b3f5be84ad16/" target="_blank">詳細</a></td>
   <td class="name-col"><b>志木ニュータウン南の森弐番街9号棟　中古マンション</b></td>
@@ -2146,7 +2150,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-7" class="prop-row">
   <td style="color:var(--muted)">7</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_5386622a89423ba5b03b55e4aa13dbac/" target="_blank">詳細</a></td>
   <td class="name-col"><b>レクセルマンション浦和</b></td>
@@ -2172,7 +2176,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-8" class="prop-row">
   <td style="color:var(--muted)">8</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/tsurugashimashi_ct/detail_ca819c96450a378d83fa4f4542e744e6/" target="_blank">詳細</a></td>
   <td class="name-col"><b>かわつるグリーンタウン新鶴団地</b></td>
@@ -2198,7 +2202,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-9" class="prop-row">
   <td style="color:var(--muted)">9</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sokashi_ct/mansion_c58c701014633f8392c7a4cce03a938c/" target="_blank">詳細</a></td>
   <td class="name-col"><b>カルム草加弐番館</b></td>
@@ -2224,7 +2228,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-10" class="prop-row">
   <td style="color:var(--muted)">10</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/koshigayashi_ct/detail_cd9afd20f9f3308f85b3ee565d0b66a2/" target="_blank">詳細</a></td>
   <td class="name-col"><b>エム・ブランド越谷GAMO</b></td>
@@ -2250,7 +2254,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-11" class="prop-row">
   <td style="color:var(--muted)">11</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/tokorozawashi_ct/mansion_dee7282909031280a6190dc796452df2/" target="_blank">詳細</a></td>
   <td class="name-col"><b>スカイマンション</b></td>
@@ -2276,7 +2280,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-12" class="prop-row">
   <td style="color:var(--muted)">12</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/fujimishi_ct/detail_c42e544d9b6e3848b292a9ab8f228ace/" target="_blank">詳細</a></td>
   <td class="name-col"><b>シティベールふじみ野二番館</b></td>
@@ -2302,7 +2306,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-13" class="prop-row">
   <td style="color:var(--muted)">13</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiminumaku_ct/mansion_0220af072d5b18aa6ea5665e3832df7e/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アーバンみらい東大宮東二番街［9-2号棟］</b></td>
@@ -2328,7 +2332,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-14" class="prop-row">
   <td style="color:var(--muted)">14</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashimidoriku_ct/mansion_197fabf83fac149373c2c7acdd53f0c2/" target="_blank">詳細</a></td>
   <td class="name-col"><b>日建シェトワ浦和</b></td>
@@ -2354,7 +2358,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-15" class="prop-row">
   <td style="color:var(--muted)">15</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_964473a066133abbb63e504e1811b892/" target="_blank">詳細</a></td>
   <td class="name-col"><b>レーベンハイム大宮奈良町</b></td>
@@ -2380,7 +2384,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-16" class="prop-row">
   <td style="color:var(--muted)">16</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/irumashi_ct/mansion_f23dcf5ebf3699a28a10c159e5e3b108/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイアパレス仏子</b></td>
@@ -2406,7 +2410,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-17" class="prop-row">
   <td style="color:var(--muted)">17</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/ageoshi_ct/detail_adfd4a3163f9359883927376bfc18915/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヴァンベール上尾?</b></td>
@@ -2432,7 +2436,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-18" class="prop-row">
   <td style="color:var(--muted)">18</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sakadoshi_ct/mansion_8217ddcff1633fd99c1bda0690cdd3f7/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイアパレス坂戸</b></td>
@@ -2458,7 +2462,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-19" class="prop-row">
   <td style="color:var(--muted)">19</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_acd0dc66c6d339209cdfb43377a79ace/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県川口市栄町１丁目</b></td>
@@ -2484,7 +2488,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-20" class="prop-row">
   <td style="color:var(--muted)">20</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sayamashi_ct/mansion_43d1ee2d53123942a9de753ceca50673/" target="_blank">詳細</a></td>
   <td class="name-col"><b>新狭山住宅 B棟</b></td>
@@ -2510,7 +2514,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-21" class="prop-row">
   <td style="color:var(--muted)">21</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_af561636a03b9ed77d4ffe3a3e3fc60f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ベルヴィル大宮</b></td>
@@ -2536,7 +2540,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-22" class="prop-row">
   <td style="color:var(--muted)">22</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/todashi_ct/detail_a581145ff4ac32d298917f5c17f9336a/" target="_blank">詳細</a></td>
   <td class="name-col"><b>〜Renovation　角部屋〜コスモ戸田公園グランシティ</b></td>
@@ -2562,7 +2566,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-23" class="prop-row">
   <td style="color:var(--muted)">23</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_aee9deb2bd083d4fb6f4c731459f10c0/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県川口市大字里</b></td>
@@ -2588,7 +2592,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-24" class="prop-row">
   <td style="color:var(--muted)">24</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kukishi_ct/mansion_9df6d5469df23c3fb873ffbf3f121139/" target="_blank">詳細</a></td>
   <td class="name-col"><b>パレスマンション</b></td>
@@ -2614,7 +2618,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-25" class="prop-row">
   <td style="color:var(--muted)">25</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashichuoku_ct/mansion_013ec866128b3b549f5d71f90165c9e4/" target="_blank">詳細</a></td>
   <td class="name-col"><b>大宮ハウス</b></td>
@@ -2640,7 +2644,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-26" class="prop-row">
   <td style="color:var(--muted)">26</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sokashi_ct/detail_b0d8f6372a2e3358bdea85b0a18c37cb/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県草加市中根２丁目</b></td>
@@ -2666,7 +2670,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-27" class="prop-row">
   <td style="color:var(--muted)">27</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_abf61389ee278f75ea54d0d0c5bd0e35/" target="_blank">詳細</a></td>
   <td class="name-col"><b>かわつる三芳野団地</b></td>
@@ -2692,7 +2696,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-28" class="prop-row">
   <td style="color:var(--muted)">28</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kazoshi_ct/mansion_57f774e6118395f2a44389d8c92809f6/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライオンズガーデン花崎</b></td>
@@ -2718,7 +2722,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-29" class="prop-row">
   <td style="color:var(--muted)">29</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_75732cb5b98b7a897460c6d5e381e512/" target="_blank">詳細</a></td>
   <td class="name-col"><b>レ・ジェイド本川越コエドテラス</b></td>
@@ -2744,7 +2748,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-30" class="prop-row">
   <td style="color:var(--muted)">30</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sokashi_ct/detail_c08ff2a5964b31478d22345faea3fb9e/" target="_blank">詳細</a></td>
   <td class="name-col"><b>藤和シティホームズ草加松原</b></td>
@@ -2770,7 +2774,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-31" class="prop-row">
   <td style="color:var(--muted)">31</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/irumashi_ct/detail_bd057f1cd9643b1d8ac3b6c914d8dac9/" target="_blank">詳細</a></td>
   <td class="name-col"><b>【当日見学OK！】入間ビレッジ8号棟／7階</b></td>
@@ -2796,7 +2800,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-32" class="prop-row">
   <td style="color:var(--muted)">32</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/ageoshi_ct/mansion_c4aac6bbfbc2364b9f878b9e3a1da3ac/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ローヤルシティ上尾</b></td>
@@ -2822,7 +2826,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-33" class="prop-row">
   <td style="color:var(--muted)">33</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/niizashi_ct/mansion_e30b75510fb2352b95404f9c5e2b4ac0/" target="_blank">詳細</a></td>
   <td class="name-col"><b>グランシエロ朝霞台シエナの丘</b></td>
@@ -2848,7 +2852,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-34" class="prop-row">
   <td style="color:var(--muted)">34</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/tokorozawashi_ct/detail_b43395d59595379e9826abeaefc97fbc/" target="_blank">詳細</a></td>
   <td class="name-col"><b>フォーラスタワー所沢　中古戸建て　30階</b></td>
@@ -2874,7 +2878,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-35" class="prop-row">
   <td style="color:var(--muted)">35</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_edf3154e577a3d599ceaba32f358fa0f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>-</b></td>
@@ -2900,7 +2904,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-36" class="prop-row">
   <td style="color:var(--muted)">36</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiomiyaku_ct/mansion_530ec73ac444d117a754cf40fccf0cc5/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライオンズグローベルさいたま新都心セントアヴェニュー</b></td>
@@ -2926,7 +2930,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-37" class="prop-row">
   <td style="color:var(--muted)">37</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_9ce3ce843211358685a516d4e107d6a4/" target="_blank">詳細</a></td>
   <td class="name-col"><b>DIKマンション浦和</b></td>
@@ -2952,7 +2956,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-38" class="prop-row">
   <td style="color:var(--muted)">38</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/misatoshi_ct/detail_92fd7adc685439a69fc49fea30121c61/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県三郷市早稲田７丁目</b></td>
@@ -2978,7 +2982,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-39" class="prop-row">
   <td style="color:var(--muted)">39</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_33cc8dd508ce3a25bf3436253e463f5f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ラミーユ大宮ハイライズ一番館（ソレール棟）</b></td>
@@ -3004,7 +3008,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-40" class="prop-row">
   <td style="color:var(--muted)">40</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sayamashi_ct/mansion_3390616647e3964147e06b3e191b1764/" target="_blank">詳細</a></td>
   <td class="name-col"><b>狭山台団地２街区</b></td>
@@ -3030,7 +3034,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-41" class="prop-row">
   <td style="color:var(--muted)">41</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_1de26deb59b63eeca270f2586afe8a00/" target="_blank">詳細</a></td>
   <td class="name-col"><b>インプレスト東浦和</b></td>
@@ -3056,7 +3060,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-42" class="prop-row">
   <td style="color:var(--muted)">42</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/fujimishi_ct/mansion_50877d8cf7a936a5a3cda98e289224fc/" target="_blank">詳細</a></td>
   <td class="name-col"><b>シティヴェールふじみ野二番館</b></td>
@@ -3082,7 +3086,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-43" class="prop-row">
   <td style="color:var(--muted)">43</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_4d311a1cccda33adb2c098a2927b8e62/" target="_blank">詳細</a></td>
   <td class="name-col"><b>メゾンむさし野</b></td>
@@ -3108,7 +3112,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-44" class="prop-row">
   <td style="color:var(--muted)">44</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/saitamashisakuraku_ct/detail_9046db18d1353063ba61be8b5d495bea/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイアパレス浦和秋ヶ瀬公園</b></td>
@@ -3134,7 +3138,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-45" class="prop-row">
   <td style="color:var(--muted)">45</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/saitamashisakuraku_ct/detail_90d951d5063e393a8a8633edf8767ee6/" target="_blank">詳細</a></td>
   <td class="name-col"><b>東急ドエル・アルス浦和埼大通り</b></td>
@@ -3160,7 +3164,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-46" class="prop-row">
   <td style="color:var(--muted)">46</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_d0279f6295dc32058d78cd6851e902ef/" target="_blank">詳細</a></td>
   <td class="name-col"><b>グリーンコーポ西川口</b></td>
@@ -3186,7 +3190,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-47" class="prop-row">
   <td style="color:var(--muted)">47</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sokashi_ct/mansion_4fe59b9b6a363655b487d4ffc354086f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>日商岩井草加マンション</b></td>
@@ -3212,7 +3216,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-48" class="prop-row">
   <td style="color:var(--muted)">48</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/wakoshi_ct/detail_a22660dac89a310ba8434fc6f4372acc/" target="_blank">詳細</a></td>
   <td class="name-col"><b>クリオ西高島平壱番館</b></td>
@@ -3238,7 +3242,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-49" class="prop-row">
   <td style="color:var(--muted)">49</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kitamotoshi_ct/mansion_4384ddb8c48334c0b79c5b596bd58c50/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ワコーレロイヤルガーデン北本B棟</b></td>
@@ -3264,7 +3268,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-50" class="prop-row">
   <td style="color:var(--muted)">50</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/fujiminoshi_ct/mansion_959915c8205f39f0aed65902db223d2a/" target="_blank">詳細</a></td>
   <td class="name-col"><b>シティふじみ野　6階</b></td>
@@ -3290,7 +3294,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-51" class="prop-row">
   <td style="color:var(--muted)">51</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_778a547f86b9926eed381d68c9cbebdd/" target="_blank">詳細</a></td>
   <td class="name-col"><b>川口幸町パーク・ホームズ</b></td>
@@ -3316,7 +3320,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-52" class="prop-row">
   <td style="color:var(--muted)">52</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/misatoshi_ct/mansion_595f065c527537e9a7ad03936c344591/" target="_blank">詳細</a></td>
   <td class="name-col"><b>金町ダイヤモンドマンション</b></td>
@@ -3342,7 +3346,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-53" class="prop-row">
   <td style="color:var(--muted)">53</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_9b31f96187853d3eb926fd60fbdb090e/" target="_blank">詳細</a></td>
   <td class="name-col"><b>南浦和寿コーポ</b></td>
@@ -3368,7 +3372,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-54" class="prop-row">
   <td style="color:var(--muted)">54</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_dedbbddc44d66ce3a5a365f61dc24d84/" target="_blank">詳細</a></td>
   <td class="name-col"><b>◆当社売主物件◆笠幡グリーンパーク2号棟</b></td>
@@ -3394,7 +3398,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-55" class="prop-row">
   <td style="color:var(--muted)">55</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashimidoriku_ct/mansion_88f91536e6443a0fbc86672c422ca863/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヒューマンスクエア東浦和アトレシア壱番館</b></td>
@@ -3420,7 +3424,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-56" class="prop-row">
   <td style="color:var(--muted)">56</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/saitamashiomiyaku_ct/detail_d85dd221d601300bb701162e0f0ac3fb/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県さいたま市大宮区吉敷町２丁目</b></td>
@@ -3446,7 +3450,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-57" class="prop-row">
   <td style="color:var(--muted)">57</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/warabishi_ct/mansion_953eec66fc193673b274ce05cc65a603/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ブリーズコート蕨塚越テラス</b></td>
@@ -3472,7 +3476,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-58" class="prop-row">
   <td style="color:var(--muted)">58</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_d88d7f381d293f6492965a4fe3bb4e36/" target="_blank">詳細</a></td>
   <td class="name-col"><b>川口</b></td>
@@ -3498,7 +3502,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-59" class="prop-row">
   <td style="color:var(--muted)">59</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_d8df9180ed2e373893fa140eb8933bed/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県川口市北原台１丁目</b></td>
@@ -3524,7 +3528,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-60" class="prop-row">
   <td style="color:var(--muted)">60</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_a440618f3d5134c89ad12bfad3d503db/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ルイシャトレ川口青木リバーパーク</b></td>
@@ -3550,7 +3554,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-61" class="prop-row">
   <td style="color:var(--muted)">61</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawagoeshi_ct/detail_2824d177404333f8ad1af31e3bcf32cd/" target="_blank">詳細</a></td>
   <td class="name-col"><b>-</b></td>
@@ -3576,7 +3580,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-62" class="prop-row">
   <td style="color:var(--muted)">62</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sokashi_ct/detail_28c25fca4ad73a76a76ecd468791926f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ルネマザーズシティ北棟</b></td>
@@ -3602,7 +3606,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-63" class="prop-row">
   <td style="color:var(--muted)">63</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/tokorozawashi_ct/detail_28c615b200ea398eb5dedf9aaf5451e0/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県所沢市東所沢２丁目</b></td>
@@ -3628,7 +3632,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-64" class="prop-row">
   <td style="color:var(--muted)">64</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kumagayashi_ct/mansion_9b159b120f7a3250a1622f5c2b4fd05b/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヴィラーヌ熊谷ル・ソレステ</b></td>
@@ -3654,7 +3658,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-65" class="prop-row">
   <td style="color:var(--muted)">65</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/tokorozawashi_ct/detail_2562a93d17b73743b275fc61699368a3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>コンセールタワー所沢</b></td>
@@ -3680,7 +3684,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-66" class="prop-row">
   <td style="color:var(--muted)">66</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/tokorozawashi_ct/mansion_c33fcecc163f3cd4927458806caf1bed/" target="_blank">詳細</a></td>
   <td class="name-col"><b>シティタワー所沢クラッシィ</b></td>
@@ -3706,7 +3710,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-67" class="prop-row">
   <td style="color:var(--muted)">67</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/koshigayashi_ct/mansion_6a37a165f3f133c3bd79250d6478fa58/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ザ・シーズンズ　グランアルト越谷レイクタウン</b></td>
@@ -3732,7 +3736,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-68" class="prop-row">
   <td style="color:var(--muted)">68</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/koshigayashi_ct/mansion_1b781a9e79b805ca84552df03ae45d44/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ハイツせんげん台B棟</b></td>
@@ -3758,7 +3762,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-69" class="prop-row">
   <td style="color:var(--muted)">69</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/todashi_ct/mansion_7cca80317c8c3d1aa553ce65bac9bfeb/" target="_blank">詳細</a></td>
   <td class="name-col"><b>グレース・コート戸田公園</b></td>
@@ -3784,7 +3788,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-70" class="prop-row">
   <td style="color:var(--muted)">70</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_dd42b6eb53f73ae68a76faac35f08b91/" target="_blank">詳細</a></td>
   <td class="name-col"><b>宮原パークハイツ</b></td>
@@ -3810,7 +3814,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-71" class="prop-row">
   <td style="color:var(--muted)">71</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_e3902ad2b25230a1bac44beed929842d/" target="_blank">詳細</a></td>
   <td class="name-col"><b>オーベル浦和仲町</b></td>
@@ -3836,7 +3840,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-72" class="prop-row">
   <td style="color:var(--muted)">72</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kasukabeshi_ct/mansion_9dd6b5c4803b312d86b8b70f7d027347/" target="_blank">詳細</a></td>
   <td class="name-col"><b>春日部ファミールハイツ</b></td>
@@ -3862,7 +3866,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-73" class="prop-row">
   <td style="color:var(--muted)">73</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_9c8f9728c5c3be5ef64f32ed3d49f02e/" target="_blank">詳細</a></td>
   <td class="name-col"><b>東急クリエール東川口</b></td>
@@ -3888,7 +3892,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-74" class="prop-row">
   <td style="color:var(--muted)">74</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_3c874e0425ea32488c179ea28e288f91/" target="_blank">詳細</a></td>
   <td class="name-col"><b>オーベル大宮宮原</b></td>
@@ -3914,7 +3918,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-75" class="prop-row">
   <td style="color:var(--muted)">75</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/irumashi_ct/mansion_944144a5dc723dcbb99e7ee17d30f5b7/" target="_blank">詳細</a></td>
   <td class="name-col"><b>入間扇町屋団地　２３号棟</b></td>
@@ -3940,7 +3944,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-76" class="prop-row">
   <td style="color:var(--muted)">76</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/saitamashikitaku_ct/detail_232089ba378f3087964bd27f61a0fccb/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県さいたま市北区宮原町１丁目</b></td>
@@ -3966,7 +3970,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-77" class="prop-row">
   <td style="color:var(--muted)">77</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_aa3086433ad93a24a1aabf56f0c4c8b6/" target="_blank">詳細</a></td>
   <td class="name-col"><b>セザール大宮日進</b></td>
@@ -3992,7 +3996,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-78" class="prop-row">
   <td style="color:var(--muted)">78</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/niizashi_ct/detail_00de59f7869e3b7fa48454d6c9e3a16f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県新座市大和田５丁目</b></td>
@@ -4018,7 +4022,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-79" class="prop-row">
   <td style="color:var(--muted)">79</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_7a63d0554e24357aa33c024932462d9b/" target="_blank">詳細</a></td>
   <td class="name-col"><b>シティデュオタワー川口</b></td>
@@ -4044,7 +4048,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-80" class="prop-row">
   <td style="color:var(--muted)">80</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sayamashi_ct/mansion_f2ce2d98458afcbb8174e0af45e0f315/" target="_blank">詳細</a></td>
   <td class="name-col"><b>西武狭山台ハイツ Ｙ号棟</b></td>
@@ -4070,7 +4074,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-81" class="prop-row">
   <td style="color:var(--muted)">81</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/niizashi_ct/mansion_b90c8960f8413e70963d5a570a83f76d/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライオンズガーデン志木学園西</b></td>
@@ -4096,7 +4100,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-82" class="prop-row">
   <td style="color:var(--muted)">82</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/shikishi_ct/detail_1b81f638445734bfb759e27692d54217/" target="_blank">詳細</a></td>
   <td class="name-col"><b>志木二ュータウン中央の森弐番街四号棟</b></td>
@@ -4122,7 +4126,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-83" class="prop-row">
   <td style="color:var(--muted)">83</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_1bdbd0fa2d98362386985a0a0f77a524/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県川口市芝下１丁目</b></td>
@@ -4148,7 +4152,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-84" class="prop-row">
   <td style="color:var(--muted)">84</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_11dc49c5be593992a04e166aa4151a40/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県川口市並木３丁目</b></td>
@@ -4174,7 +4178,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-85" class="prop-row">
   <td style="color:var(--muted)">85</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_19ed143cf1fb31afb1bba55f9ac56238/" target="_blank">詳細</a></td>
   <td class="name-col"><b>インプレスト川口青木</b></td>
@@ -4200,7 +4204,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-86" class="prop-row">
   <td style="color:var(--muted)">86</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_6edc8d7a61a87c8fe40c6424f62d0e41/" target="_blank">詳細</a></td>
   <td class="name-col"><b>バウス川口新井宿</b></td>
@@ -4226,7 +4230,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-87" class="prop-row">
   <td style="color:var(--muted)">87</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_135d08231061361e8745256a0f1db777/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県川口市仲町</b></td>
@@ -4252,7 +4256,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-88" class="prop-row">
   <td style="color:var(--muted)">88</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/saitamashimidoriku_ct/detail_1a21d15b40c53d778b6620356b7d7cdc/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県さいたま市緑区東浦和２丁目</b></td>
@@ -4278,7 +4282,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-89" class="prop-row">
   <td style="color:var(--muted)">89</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_19a8f9d24f973decabd88a65abe19cca/" target="_blank">詳細</a></td>
   <td class="name-col"><b>川口第一永谷マンション</b></td>
@@ -4304,7 +4308,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-90" class="prop-row">
   <td style="color:var(--muted)">90</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/ageoshi_ct/mansion_b461fb604ea93d60b4198309389f20f0/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヴァンベール上尾2</b></td>
@@ -4330,7 +4334,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-91" class="prop-row">
   <td style="color:var(--muted)">91</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/saitamashimidoriku_ct/detail_41219b2ffb863567adfab1412773a7a5/" target="_blank">詳細</a></td>
   <td class="name-col"><b>東浦和住宅</b></td>
@@ -4356,7 +4360,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-92" class="prop-row">
   <td style="color:var(--muted)">92</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/yashioshi_ct/mansion_01cfaef3169162a7f87f1e358f1bfde1/" target="_blank">詳細</a></td>
   <td class="name-col"><b>スウィートコート八潮4丁目</b></td>
@@ -4382,7 +4386,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-93" class="prop-row">
   <td style="color:var(--muted)">93</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/honjoshi_ct/detail_447aad5b758c324eaed96866ea0486f0/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイヤパレス本庄</b></td>
@@ -4408,7 +4412,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-94" class="prop-row">
   <td style="color:var(--muted)">94</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_0493d3966534311ab1a4e1945e24faf7/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヴェリティ川越</b></td>
@@ -4434,7 +4438,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-95" class="prop-row">
   <td style="color:var(--muted)">95</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/ageoshi_ct/mansion_84c24c04665e3994afd52d2cd2f1ab3a/" target="_blank">詳細</a></td>
   <td class="name-col"><b>フォレストリア北上尾</b></td>
@@ -4460,7 +4464,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-96" class="prop-row">
   <td style="color:var(--muted)">96</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_3d66ff919b343c1fb24d6ae00022c49e/" target="_blank">詳細</a></td>
   <td class="name-col"><b>日神パレステージ蔵</b></td>
@@ -4486,7 +4490,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-97" class="prop-row">
   <td style="color:var(--muted)">97</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/ageoshi_ct/mansion_03f69bd655473455bc209daf2aa9de2d/" target="_blank">詳細</a></td>
   <td class="name-col"><b>リッシェル上尾</b></td>
@@ -4512,7 +4516,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-98" class="prop-row">
   <td style="color:var(--muted)">98</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/fujimishi_ct/detail_430bc0dc82023e378a0560d74e9e982f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>-</b></td>
@@ -4538,7 +4542,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-99" class="prop-row">
   <td style="color:var(--muted)">99</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/koshigayashi_ct/detail_3ee89c89f57e37e4a1fb51b0b3c93a14/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県越谷市大沢３丁目</b></td>
@@ -4564,7 +4568,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-100" class="prop-row">
   <td style="color:var(--muted)">100</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/todashi_ct/detail_30aa0b05d8b339d190b2f4f64b9bcf4b/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県戸田市大字新曽</b></td>
@@ -4590,7 +4594,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-101" class="prop-row">
   <td style="color:var(--muted)">101</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/todashi_ct/mansion_50e75fd0acca3f57007cf838845d117f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>クレアホームズ戸田公園</b></td>
@@ -4616,7 +4620,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-102" class="prop-row">
   <td style="color:var(--muted)">102</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/ageoshi_ct/mansion_cf3fb191d03b37fd85515828c6667824/" target="_blank">詳細</a></td>
   <td class="name-col"><b>パーク上尾弐番館</b></td>
@@ -4642,7 +4646,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-103" class="prop-row">
   <td style="color:var(--muted)">103</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_d2f229fcec6a36a6bd640b92c839331b/" target="_blank">詳細</a></td>
   <td class="name-col"><b>サンロイヤル大宮</b></td>
@@ -4668,7 +4672,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-104" class="prop-row">
   <td style="color:var(--muted)">104</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/hannoshi_ct/detail_2bcbb13248a238f69bd1c2a09563cf56/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県飯能市柳町</b></td>
@@ -4694,7 +4698,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-105" class="prop-row">
   <td style="color:var(--muted)">105</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/todashi_ct/mansion_404cbbca6f8a3565ba5cc43439b8018c/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ハイラーク戸田公園</b></td>
@@ -4720,7 +4724,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-106" class="prop-row">
   <td style="color:var(--muted)">106</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/yashioshi_ct/detail_2d0c9667d98f3f3e9cbe0b772189d850/" target="_blank">詳細</a></td>
   <td class="name-col"><b>グリーンパーク八潮?中央</b></td>
@@ -4746,7 +4750,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-107" class="prop-row">
   <td style="color:var(--muted)">107</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/misatoshi_ct/mansion_9fbb1eca90d43cf490cedbc56da5c579/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライフペリエ三郷</b></td>
@@ -4772,7 +4776,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-108" class="prop-row">
   <td style="color:var(--muted)">108</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/niizashi_ct/mansion_b1b669963a983aa6ac390c88e3e06ebf/" target="_blank">詳細</a></td>
   <td class="name-col"><b>グリーンビレッジ野火止</b></td>
@@ -4798,7 +4802,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-109" class="prop-row">
   <td style="color:var(--muted)">109</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiminumaku_ct/mansion_c56a4706337730e0e15da875405fa1c5/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アーバンみらい東大宮</b></td>
@@ -4824,7 +4828,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-110" class="prop-row">
   <td style="color:var(--muted)">110</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/misatoshi_ct/mansion_ebf2563d71e137828642751a5ea9ab37/" target="_blank">詳細</a></td>
   <td class="name-col"><b>グランテラス水元公園</b></td>
@@ -4850,7 +4854,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-111" class="prop-row">
   <td style="color:var(--muted)">111</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/ageoshi_ct/detail_07b10bb839f937de984c30b169183aa4/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県上尾市大字中妻</b></td>
@@ -4876,7 +4880,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-112" class="prop-row">
   <td style="color:var(--muted)">112</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kitakatsushikagunsugitomachi_ct/detail_07da701728553a6f957da397f5cb7498/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県北葛飾郡杉戸町内田２丁目</b></td>
@@ -4902,7 +4906,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-113" class="prop-row">
   <td style="color:var(--muted)">113</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/koshigayashi_ct/detail_02e71fe42d8430089026c9a35f05f3b9/" target="_blank">詳細</a></td>
   <td class="name-col"><b>北越谷スカイハイツ1号棟</b></td>
@@ -4928,7 +4932,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-114" class="prop-row">
   <td style="color:var(--muted)">114</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_e92c6392319f3c5f8e91235431f59488/" target="_blank">詳細</a></td>
   <td class="name-col"><b>マートルコート川口</b></td>
@@ -4954,7 +4958,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-115" class="prop-row">
   <td style="color:var(--muted)">115</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/fujimishi_ct/mansion_e2da0a1ad53537078c52efa43332405b/" target="_blank">詳細</a></td>
   <td class="name-col"><b>レクセルマンション鶴瀬第２</b></td>
@@ -4980,7 +4984,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-116" class="prop-row">
   <td style="color:var(--muted)">116</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/todashi_ct/detail_08d75610b8f43c119322f444b1cbf5e3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>シティテラス戸田公園</b></td>
@@ -5006,7 +5010,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-117" class="prop-row">
   <td style="color:var(--muted)">117</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiminamiku_ct/mansion_4d5f8cd1437b36f3a5a840598767ec55/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アーデル武蔵浦和ファシーノ</b></td>
@@ -5032,7 +5036,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-118" class="prop-row">
   <td style="color:var(--muted)">118</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/tsurugashimashi_ct/mansion_5989fd7934c8b2000d3f83cfb75cdb47/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイアパレス若葉弐番館</b></td>
@@ -5058,7 +5062,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-119" class="prop-row">
   <td style="color:var(--muted)">119</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/saitamashimidoriku_ct/detail_0b7ff75c133f3a81b39d188414e4146c/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県さいたま市緑区美園４丁目</b></td>
@@ -5084,7 +5088,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-120" class="prop-row">
   <td style="color:var(--muted)">120</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_fe9ba2dd37e53632939abd0d80af519b/" target="_blank">詳細</a></td>
   <td class="name-col"><b>プライムコート川口北原台</b></td>
@@ -5110,7 +5114,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-121" class="prop-row">
   <td style="color:var(--muted)">121</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiomiyaku_ct/mansion_c28a76bcd95e3030bc0f49d401b06451/" target="_blank">詳細</a></td>
   <td class="name-col"><b>コートプラザ大宮市役所通り</b></td>
@@ -5136,7 +5140,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-122" class="prop-row">
   <td style="color:var(--muted)">122</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/fujimishi_ct/detail_028f9c63fa243aa6ac272b04b721cca3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>-</b></td>
@@ -5162,7 +5166,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-123" class="prop-row">
   <td style="color:var(--muted)">123</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_5e4628fcc39f3da395fb268ce1916cb2/" target="_blank">詳細</a></td>
   <td class="name-col"><b>鳩ケ谷第２ローヤルコーポ</b></td>
@@ -5188,7 +5192,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-124" class="prop-row">
   <td style="color:var(--muted)">124</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sokashi_ct/detail_058d3e61ee163982bb12ee70b0dd0db3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>メイツ草加　R</b></td>
@@ -5214,7 +5218,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-125" class="prop-row">
   <td style="color:var(--muted)">125</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_b767590fae7a3269b5f322ac62600212/" target="_blank">詳細</a></td>
   <td class="name-col"><b>クオラフィラーレ東川口</b></td>
@@ -5240,7 +5244,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-126" class="prop-row">
   <td style="color:var(--muted)">126</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/warabishi_ct/detail_4b174135e50931a2b6ba3e85a546cd61/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アイディ—コート蕨パークアヴェニュー</b></td>
@@ -5266,7 +5270,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-127" class="prop-row">
   <td style="color:var(--muted)">127</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/fujimishi_ct/mansion_47158a2e8a0633699837b482e4f24907/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アイムふじみ野タワー西館</b></td>
@@ -5292,7 +5296,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-128" class="prop-row">
   <td style="color:var(--muted)">128</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_4c5d0661d70c3f888f405b0c4b6e1e54/" target="_blank">詳細</a></td>
   <td class="name-col"><b>シャリエ川口本町グリーンマークス4LDK・南東角部屋</b></td>
@@ -5318,7 +5322,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-129" class="prop-row">
   <td style="color:var(--muted)">129</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sayamashi_ct/detail_49d01e23653a3bee865fc496062ec738/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アーベイン狭山</b></td>
@@ -5344,7 +5348,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-130" class="prop-row">
   <td style="color:var(--muted)">130</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/asakashi_ct/detail_4af8c696426d3c4c97ef89481d6ae931/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ハートヒルズ21朝霞の森（朝霞店）</b></td>
@@ -5370,7 +5374,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-131" class="prop-row">
   <td style="color:var(--muted)">131</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sakadoshi_ct/detail_482d9e7d5bd83fe8abe78c5a27f832f2/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイアパレス坂戸３０３号室</b></td>
@@ -5396,7 +5400,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-132" class="prop-row">
   <td style="color:var(--muted)">132</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_757ed2ac645936afb2bd58f728254b16/" target="_blank">詳細</a></td>
   <td class="name-col"><b>クリオ浦和仲町</b></td>
@@ -5422,7 +5426,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-133" class="prop-row">
   <td style="color:var(--muted)">133</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiminamiku_ct/mansion_49d0b519c8b63cb69a779a308bb3f657/" target="_blank">詳細</a></td>
   <td class="name-col"><b>コスモ浦和根岸参番館</b></td>
@@ -5448,7 +5452,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-134" class="prop-row">
   <td style="color:var(--muted)">134</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/hannoshi_ct/detail_7788977a730d3bf6be8afcfaf490c925/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県飯能市栄町</b></td>
@@ -5474,7 +5478,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-135" class="prop-row">
   <td style="color:var(--muted)">135</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_f414ac59082f34e28dd7a76029ccb306/" target="_blank">詳細</a></td>
   <td class="name-col"><b>オーベル浦和レジデンス</b></td>
@@ -5500,7 +5504,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-136" class="prop-row">
   <td style="color:var(--muted)">136</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_961d381250413e9fbd643412dc245cda/" target="_blank">詳細</a></td>
   <td class="name-col"><b>キャッスルマンション川越Ｂ</b></td>
@@ -5526,7 +5530,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-137" class="prop-row">
   <td style="color:var(--muted)">137</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sayamashi_ct/detail_73cdc5559a473536ae3a8c4f35c5e292/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アーベイン狭山−おひさまハウス−</b></td>
@@ -5552,7 +5556,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-138" class="prop-row">
   <td style="color:var(--muted)">138</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_19919aa5d02b6961c2ee0244a74992ee/" target="_blank">詳細</a></td>
   <td class="name-col"><b>リプレ川口一番街</b></td>
@@ -5578,7 +5582,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-139" class="prop-row">
   <td style="color:var(--muted)">139</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_c6dc73a1684231c894ea3a10f0193fde/" target="_blank">詳細</a></td>
   <td class="name-col"><b>マイキャッスル浦和常盤</b></td>
@@ -5604,7 +5608,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-140" class="prop-row">
   <td style="color:var(--muted)">140</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_0f1ba91c5a673554ac3f79b25140f0af/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライオンズマンション本川越第三　中古マンション</b></td>
@@ -5630,7 +5634,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-141" class="prop-row">
   <td style="color:var(--muted)">141</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_4b35043094a33411b93559a871d12c1f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>川口青木公園ローヤルコーポ</b></td>
@@ -5656,7 +5660,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-142" class="prop-row">
   <td style="color:var(--muted)">142</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/fukayashi_ct/mansion_6fa24d3780333685b673d7711b61c16f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイアパレスビッグウィング深谷</b></td>
@@ -5682,7 +5686,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-143" class="prop-row">
   <td style="color:var(--muted)">143</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sokashi_ct/mansion_0ef5b00ef84630e79030f5bb551a8366/" target="_blank">詳細</a></td>
   <td class="name-col"><b>草加松原プリンスハイツ</b></td>
@@ -5708,7 +5712,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-144" class="prop-row">
   <td style="color:var(--muted)">144</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sokashi_ct/detail_59ecb2e49f77355bbb1a2ae43570142e/" target="_blank">詳細</a></td>
   <td class="name-col"><b>リーデンススクエア谷塚</b></td>
@@ -5734,7 +5738,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-145" class="prop-row">
   <td style="color:var(--muted)">145</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/irumagummiyoshimachi_ct/detail_54ed78c68d033f1eb5964f856e2651d5/" target="_blank">詳細</a></td>
   <td class="name-col"><b>みよしみずほ台サンライトマンションＥ</b></td>
@@ -5760,7 +5764,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-146" class="prop-row">
   <td style="color:var(--muted)">146</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiiwatsukiku_ct/mansion_ff3e1216231c3e60bba775af54eaa6cd/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アンビシャス東岩槻</b></td>
@@ -5786,7 +5790,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-147" class="prop-row">
   <td style="color:var(--muted)">147</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_5ede8bf9a96f3863a184722171ce96b4/" target="_blank">詳細</a></td>
   <td class="name-col"><b>プレシス北浦和</b></td>
@@ -5812,7 +5816,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-148" class="prop-row">
   <td style="color:var(--muted)">148</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sakadoshi_ct/detail_561dd1db0bb13f0b9a4e4b9933a8b2ed/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県坂戸市本町</b></td>
@@ -5838,7 +5842,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-149" class="prop-row">
   <td style="color:var(--muted)">149</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/tokorozawashi_ct/mansion_42f38fd7cd9b3a389d0e7d54b4432083/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライオンズステーションプラザ西所沢</b></td>
@@ -5864,7 +5868,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-150" class="prop-row">
   <td style="color:var(--muted)">150</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/todashi_ct/detail_e307272633733856827c588334029585/" target="_blank">詳細</a></td>
   <td class="name-col"><b>Renovation　角部屋コスモ戸田公園グランシティ</b></td>
@@ -5890,7 +5894,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-151" class="prop-row">
   <td style="color:var(--muted)">151</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/asakashi_ct/mansion_d1f093a43a9030e0a3abfe18cc412ac5/" target="_blank">詳細</a></td>
   <td class="name-col"><b>朝霞サンハイツ</b></td>
@@ -5916,7 +5920,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-152" class="prop-row">
   <td style="color:var(--muted)">152</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_79a35e0ed13b39a8974a52a586c71883/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヴィアーレタワー西川口</b></td>
@@ -5942,7 +5946,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-153" class="prop-row">
   <td style="color:var(--muted)">153</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/warabishi_ct/detail_dfb65b074e893c738791cadea0c8eee2/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県蕨市北町１丁目</b></td>
@@ -5968,7 +5972,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-154" class="prop-row">
   <td style="color:var(--muted)">154</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_9b9de4e3713b30a58459726c08f1c23f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>コスモ浦和常盤</b></td>
@@ -5994,7 +5998,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-155" class="prop-row">
   <td style="color:var(--muted)">155</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/ageoshi_ct/mansion_b37813bc0f8137678068c7f8f1754faa/" target="_blank">詳細</a></td>
   <td class="name-col"><b>グランパーク上尾</b></td>
@@ -6020,7 +6024,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-156" class="prop-row">
   <td style="color:var(--muted)">156</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sokashi_ct/mansion_5040d9adfb023dab92069b2d2575dffe/" target="_blank">詳細</a></td>
   <td class="name-col"><b>シティテラス草加松原ガーデンズ</b></td>
@@ -6046,7 +6050,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-157" class="prop-row">
   <td style="color:var(--muted)">157</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/sokashi_ct/detail_d72f4aa55d3c36fa8d40d5e5206020e0/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイアパレス草加?</b></td>
@@ -6072,7 +6076,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-158" class="prop-row">
   <td style="color:var(--muted)">158</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/yashioshi_ct/detail_dcaca4a24ce935809cf8b3e6a5ac7f6c/" target="_blank">詳細</a></td>
   <td class="name-col"><b>エクレール八潮8階部分　最上階</b></td>
@@ -6098,7 +6102,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-159" class="prop-row">
   <td style="color:var(--muted)">159</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/hannoshi_ct/detail_e7717aa37deb37c39b8e631bef526ce5/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ブリランテ飯能／7階につき眺望良し</b></td>
@@ -6124,7 +6128,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-160" class="prop-row">
   <td style="color:var(--muted)">160</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_81374ab749ed07531ea0ef03528fbaa8/" target="_blank">詳細</a></td>
   <td class="name-col"><b>レーベン川口リアージュ</b></td>
@@ -6150,7 +6154,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-161" class="prop-row">
   <td style="color:var(--muted)">161</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiomiyaku_ct/mansion_ec9101fdd44632d6975493f03ff3b2d7/" target="_blank">詳細</a></td>
   <td class="name-col"><b>クリオ北大宮壱番館</b></td>
@@ -6176,7 +6180,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-162" class="prop-row">
   <td style="color:var(--muted)">162</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/tokorozawashi_ct/mansion_20f413862eb23b95bfde7e2442c3c531/" target="_blank">詳細</a></td>
   <td class="name-col"><b>フォーラスタワー所沢</b></td>
@@ -6202,7 +6206,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-163" class="prop-row">
   <td style="color:var(--muted)">163</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_c13719b883603199895e75e9c4f29c50/" target="_blank">詳細</a></td>
   <td class="name-col"><b>川口サマリヤマンション</b></td>
@@ -6228,7 +6232,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-164" class="prop-row">
   <td style="color:var(--muted)">164</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_d5b2e9ae3a4f306f9b8c6b59dd6c45d3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ソルクレスト川口</b></td>
@@ -6254,7 +6258,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-165" class="prop-row">
   <td style="color:var(--muted)">165</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_ef299a7fd4c033999b6a5289d4a10941/" target="_blank">詳細</a></td>
   <td class="name-col"><b>マンハイム大宮</b></td>
@@ -6280,7 +6284,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-166" class="prop-row">
   <td style="color:var(--muted)">166</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kumagayashi_ct/mansion_36ab7a16b5ad7af07e01e0ae22a2996d/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アルファステイツ熊谷末広</b></td>
@@ -6306,7 +6310,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-167" class="prop-row">
   <td style="color:var(--muted)">167</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_1c83548161b7355b9ebd1869b88cd8f9/" target="_blank">詳細</a></td>
   <td class="name-col"><b>グリーンコモンズ川越　６号棟</b></td>
@@ -6332,7 +6336,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-168" class="prop-row">
   <td style="color:var(--muted)">168</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/irumashi_ct/detail_eb9882abb01b3998b25a6a84c99b8945/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヴァンヴェール入間豊岡</b></td>
@@ -6358,7 +6362,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-169" class="prop-row">
   <td style="color:var(--muted)">169</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiminamiku_ct/mansion_fe7b2a60acda39588fc653577ea45028/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヴィルヌーブ南浦和サウスコート</b></td>
@@ -6384,7 +6388,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-170" class="prop-row">
   <td style="color:var(--muted)">170</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_eae9fbf0c41331cd84da077d23250fa3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>日神パレステージ蕨</b></td>
@@ -6410,7 +6414,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-171" class="prop-row">
   <td style="color:var(--muted)">171</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_5a5daba4fa0e3078900aee5694dfc9c7/" target="_blank">詳細</a></td>
   <td class="name-col"><b>コスモ川口グレイスフォルム</b></td>
@@ -6436,7 +6440,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-172" class="prop-row">
   <td style="color:var(--muted)">172</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_f3a896b1590a3fa2add62c629a07b159/" target="_blank">詳細</a></td>
   <td class="name-col"><b>-</b></td>
@@ -6462,7 +6466,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-173" class="prop-row">
   <td style="color:var(--muted)">173</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiomiyaku_ct/mansion_ab2750878fb7382cacf831ef55b4a63f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ネオステージ大宮</b></td>
@@ -6488,7 +6492,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-174" class="prop-row">
   <td style="color:var(--muted)">174</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiiwatsukiku_ct/mansion_113495aa2e3f3a898eacc94fc746256a/" target="_blank">詳細</a></td>
   <td class="name-col"><b>岩槻スカイハイツ</b></td>
@@ -6514,7 +6518,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-175" class="prop-row">
   <td style="color:var(--muted)">175</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashisakuraku_ct/mansion_bedab406260b3362adf74d75775052aa/" target="_blank">詳細</a></td>
   <td class="name-col"><b>エクセルコート浦和</b></td>
@@ -6540,7 +6544,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-176" class="prop-row">
   <td style="color:var(--muted)">176</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_689bc73c5d2a3314bb05dfb4bf69ef7b/" target="_blank">詳細</a></td>
   <td class="name-col"><b>○ミオカステーロ東川口</b></td>
@@ -6566,7 +6570,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-177" class="prop-row">
   <td style="color:var(--muted)">177</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kasukabeshi_ct/mansion_9dd6b5c4803b312d86b8b70f7d027347/" target="_blank">詳細</a></td>
   <td class="name-col"><b>春日部ファミールハイツ</b></td>
@@ -6592,7 +6596,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-178" class="prop-row">
   <td style="color:var(--muted)">178</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_acfc2073fd48314fbe52fe27bf98eb53/" target="_blank">詳細</a></td>
   <td class="name-col"><b>パークホームズさいたま常盤</b></td>
@@ -6618,7 +6622,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-179" class="prop-row">
   <td style="color:var(--muted)">179</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_79b5ff5bc0663bc8b19cf0880e953d50/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライオンズマンション大宮吉野原</b></td>
@@ -6644,7 +6648,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-180" class="prop-row">
   <td style="color:var(--muted)">180</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiminumaku_ct/mansion_c909e0f0f72c50d08f3f5d7b1555f78e/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アーバンみらい東大宮東三番街</b></td>
@@ -6670,7 +6674,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-181" class="prop-row">
   <td style="color:var(--muted)">181</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawagoeshi_ct/mansion_aa37c29c8617abcde038d5e0ec298828/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライオンズマンション川越南古谷第3</b></td>
@@ -6696,7 +6700,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-182" class="prop-row">
   <td style="color:var(--muted)">182</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sokashi_ct/mansion_93835c8066e02e8c36e19c3b80e7610f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイアパレス草加II</b></td>
@@ -6722,7 +6726,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-183" class="prop-row">
   <td style="color:var(--muted)">183</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/irumagummiyoshimachi_ct/mansion_2001d7ffa3bee026e50697c89da24813/" target="_blank">詳細</a></td>
   <td class="name-col"><b>朝日センチュリーみずほ台　Ｅ棟</b></td>
@@ -6748,7 +6752,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-184" class="prop-row">
   <td style="color:var(--muted)">184</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/ageoshi_ct/mansion_fd45c2ec77cc3bc3a60d0a30a4b474d7/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アゼリア・シティ上尾　参番館</b></td>
@@ -6774,7 +6778,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-185" class="prop-row">
   <td style="color:var(--muted)">185</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_b844a78519a23a04a274959baa0acd23/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライオンズ川口並木グランゲート</b></td>
@@ -6800,7 +6804,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-186" class="prop-row">
   <td style="color:var(--muted)">186</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/saitamashiminumaku_ct/detail_653b0fd79a7432a3a7d4e25966cd299d/" target="_blank">詳細</a></td>
   <td class="name-col"><b>アーバンみらい東大宮東二番街　９−２号棟</b></td>
@@ -6826,7 +6830,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-187" class="prop-row">
   <td style="color:var(--muted)">187</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/yashioshi_ct/mansion_acb23d616fb93069625e068969f4fd4c/" target="_blank">詳細</a></td>
   <td class="name-col"><b>エクレール八潮　８階</b></td>
@@ -6852,7 +6856,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-188" class="prop-row">
   <td style="color:var(--muted)">188</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/wakoshi_ct/detail_7e838ba67d5a33cd9345f252a7bff222/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ディアステージ成増</b></td>
@@ -6878,7 +6882,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-189" class="prop-row">
   <td style="color:var(--muted)">189</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/todashi_ct/mansion_3a383fb901373ad592f1a92d20abf214/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ルイシャトレ戸田公園セレスタ</b></td>
@@ -6904,7 +6908,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-190" class="prop-row">
   <td style="color:var(--muted)">190</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiomiyaku_ct/mansion_aaa60c43a9b732ba949bb6e5c5d2bdf1/" target="_blank">詳細</a></td>
   <td class="name-col"><b>洋伸大宮マンション</b></td>
@@ -6930,7 +6934,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-191" class="prop-row">
   <td style="color:var(--muted)">191</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/tokorozawashi_ct/detail_7be73ff6a9e5350d9514cc8d5bdc486d/" target="_blank">詳細</a></td>
   <td class="name-col"><b>所沢パークタウングリーン並木住宅　６号棟</b></td>
@@ -6956,7 +6960,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-192" class="prop-row">
   <td style="color:var(--muted)">192</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/kawaguchishi_ct/detail_87ecc0b14b763d199800c42effe38613/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県川口市末広３丁目</b></td>
@@ -6982,7 +6986,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-193" class="prop-row">
   <td style="color:var(--muted)">193</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashichuoku_ct/mansion_5872c322f09b358185302274515c5430/" target="_blank">詳細</a></td>
   <td class="name-col"><b>与野ガーデンハイツ</b></td>
@@ -7008,7 +7012,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-194" class="prop-row">
   <td style="color:var(--muted)">194</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sokashi_ct/mansion_88f17e4d33fd36d385ab270848b23aef/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヴィ・シティ草加四番館</b></td>
@@ -7034,7 +7038,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-195" class="prop-row">
   <td style="color:var(--muted)">195</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/todashi_ct/detail_85e8f59f7395350b8019e2768eb972b5/" target="_blank">詳細</a></td>
   <td class="name-col"><b>埼玉県戸田市下戸田２丁目</b></td>
@@ -7060,7 +7064,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-196" class="prop-row">
   <td style="color:var(--muted)">196</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiminumaku_ct/mansion_db4b3ee2acc53eccb1411d8814d1e42e/" target="_blank">詳細</a></td>
   <td class="name-col"><b>AXASFORT大宮EAST</b></td>
@@ -7086,7 +7090,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-197" class="prop-row">
   <td style="color:var(--muted)">197</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/todashi_ct/mansion_6c4a64bdd10692b181045d36b4976542/" target="_blank">詳細</a></td>
   <td class="name-col"><b>藤和シティホームズ戸田</b></td>
@@ -7112,7 +7116,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-198" class="prop-row">
   <td style="color:var(--muted)">198</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/chuko-mansion/saitama/saitamashisakuraku_ct/detail_8342f47321b53150ab8d025e257c3fe3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>東急ドエル・アルス浦和埼大通り</b></td>
@@ -7138,7 +7142,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-199" class="prop-row">
   <td style="color:var(--muted)">199</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/sokashi_ct/mansion_d476105f6277322abdefc838803f9a47/" target="_blank">詳細</a></td>
   <td class="name-col"><b>セントラルメゾン草加</b></td>
@@ -7164,7 +7168,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-200" class="prop-row">
   <td style="color:var(--muted)">200</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/hasudashi_ct/mansion_d97dd34fd39d3473a85d71bdeac18e86/" target="_blank">詳細</a></td>
   <td class="name-col"><b>蓮田ビューパレー第２</b></td>
@@ -7190,7 +7194,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-201" class="prop-row">
   <td style="color:var(--muted)">201</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiminamiku_ct/mansion_c28febc9c524330a9bdfd5ed1e9765f3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ライオンズマンション南浦和プラザ</b></td>
@@ -7216,7 +7220,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-202" class="prop-row">
   <td style="color:var(--muted)">202</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_e5759c9ca20b3bd1a768536a0919cc56/" target="_blank">詳細</a></td>
   <td class="name-col"><b>東観マンション</b></td>
@@ -7242,7 +7246,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-203" class="prop-row">
   <td style="color:var(--muted)">203</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/irumashi_ct/mansion_fa55ea71fb3b338894e1b782505a8241/" target="_blank">詳細</a></td>
   <td class="name-col"><b>コーポ入間</b></td>
@@ -7268,7 +7272,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-204" class="prop-row">
   <td style="color:var(--muted)">204</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/tokorozawashi_ct/mansion_c9aa60dca5a23b6ba5e2c4781fdd228c/" target="_blank">詳細</a></td>
   <td class="name-col"><b>イニシア所沢</b></td>
@@ -7294,7 +7298,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-205" class="prop-row">
   <td style="color:var(--muted)">205</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashiurawaku_ct/mansion_df00d7e8ba203788a6c82711c670b19a/" target="_blank">詳細</a></td>
   <td class="name-col"><b>プラウド浦和岸町サンクアージュ</b></td>
@@ -7320,7 +7324,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-206" class="prop-row">
   <td style="color:var(--muted)">206</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/ageoshi_ct/mansion_b461fb604ea93d60b4198309389f20f0/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ヴァンベール上尾II</b></td>
@@ -7346,7 +7350,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-207" class="prop-row">
   <td style="color:var(--muted)">207</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/wakoshi_ct/mansion_528fff3b7a0b3261bc95a35ab5d12484/" target="_blank">詳細</a></td>
   <td class="name-col"><b>シーアイハイツ和光J棟10階</b></td>
@@ -7372,7 +7376,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-208" class="prop-row">
   <td style="color:var(--muted)">208</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kasukabeshi_ct/mansion_136f43559771387187fc02a668e851e3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>サンクレイドル春日部</b></td>
@@ -7398,7 +7402,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-209" class="prop-row">
   <td style="color:var(--muted)">209</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/saitamashikitaku_ct/mansion_fae841aa58303b7cb426f94c998c90b3/" target="_blank">詳細</a></td>
   <td class="name-col"><b>ダイアパレス本郷町</b></td>
@@ -7424,7 +7428,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="mansion-210" class="prop-row">
   <td style="color:var(--muted)">210</td>
   <td><a class="detail-btn detail-btn-purple" href="https://myhome.nifty.com/mansion-info/saitama/kawaguchishi_ct/mansion_e8f05a994a2a359c912fdc1ed01aa75f/" target="_blank">詳細</a></td>
   <td class="name-col"><b>セザールガーデン上青木</b></td>
@@ -7638,7 +7642,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
 </tr></thead>
 <tbody>
 
-<tr>
+<tr id="kodate-1" class="prop-row">
   <td style="color:var(--muted)">1</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawagoeshi_ct/detail_c86a85f026b23108b19df493e2399121/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川越市大字吉田</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7660,7 +7664,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-2" class="prop-row">
   <td style="color:var(--muted)">2</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/konosushi_ct/detail_c914bd3ed2f436d59b5a22c46b3bd340/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>鴻巣市吹上富士見</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7682,7 +7686,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-3" class="prop-row">
   <td style="color:var(--muted)">3</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/hikigunnamegawamachi_ct/detail_c2c93219a1cc38daa42dd63e7f659dfc/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7704,7 +7708,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-4" class="prop-row">
   <td style="color:var(--muted)">4</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/irumashi_ct/detail_c9c3bc5894603a9ab52eb13fa873a507/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>入間市豊岡</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7726,7 +7730,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-5" class="prop-row">
   <td style="color:var(--muted)">5</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/saitamashisakuraku_ct/detail_cde123774e0b3f28a86e1f4fd2f8143d/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>さいたま市桜区西堀</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -7748,7 +7752,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-6" class="prop-row">
   <td style="color:var(--muted)">6</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/tsurugashimashi_ct/detail_a52eaff308f731d9b1027b16c0ae296d/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>鶴ヶ島市大字中新田</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7770,7 +7774,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-7" class="prop-row">
   <td style="color:var(--muted)">7</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/irumagummoroyamamachi_ct/detail_a964987680223426aaea75ae977391de/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7792,7 +7796,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-8" class="prop-row">
   <td style="color:var(--muted)">8</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/tokorozawashi_ct/detail_aa48e27888d13ad0a85a6e4d92902631/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>所沢市大字北秋津</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7814,7 +7818,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-9" class="prop-row">
   <td style="color:var(--muted)">9</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/ageoshi_ct/detail_898eeee81dd93d7484325328bf09a720/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>上尾市西宮下</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7836,7 +7840,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-10" class="prop-row">
   <td style="color:var(--muted)">10</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/irumashi_ct/detail_8c126aa3ca8d362ebdc29d4b0da71ef4/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>入間市大字野田</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7858,7 +7862,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-11" class="prop-row">
   <td style="color:var(--muted)">11</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/wakoshi_ct/detail_8ce5ed7aa3613312ac8be2c93fac5ee0/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>和光市白子２丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7880,7 +7884,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-12" class="prop-row">
   <td style="color:var(--muted)">12</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/koshigayashi_ct/detail_96742acccf593961950a640aba387f16/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>越谷市赤山町</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7902,7 +7906,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-13" class="prop-row">
   <td style="color:var(--muted)">13</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/hidakashi_ct/detail_9ba74f16345c3dd79899e79559025412/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>日高市大字原宿</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7924,7 +7928,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-14" class="prop-row">
   <td style="color:var(--muted)">14</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://www.home-adpark.jp/es/detail.php?tmpl=nifty&category=chuko-ikkodate&pk=000004337_512668_999_0&rail=_&area=1000" target="_blank">詳細</a></td>
   <td class="loc-col"><b>所沢市和ケ原１丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7946,7 +7950,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-15" class="prop-row">
   <td style="color:var(--muted)">15</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/koshigayashi_ct/detail_d398e87096053486af12011162797d5a/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>越谷市東大沢</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7968,7 +7972,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-16" class="prop-row">
   <td style="color:var(--muted)">16</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/ageoshi_ct/detail_d9b34b1200fb3b09a08eb01030243419/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>上尾市大字原市</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -7990,7 +7994,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-17" class="prop-row">
   <td style="color:var(--muted)">17</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/irumagummoroyamamachi_ct/detail_da255e7c0a5d3061bd3fb079ee041526/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8012,7 +8016,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-18" class="prop-row">
   <td style="color:var(--muted)">18</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/ageoshi_ct/detail_29192033e37832ca93e40851cafbf27a/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>上尾市大字原市</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8034,7 +8038,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-19" class="prop-row">
   <td style="color:var(--muted)">19</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/tokorozawashi_ct/detail_296cd68813d036e4983109ba67e14dae/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>所沢市上新井</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8056,7 +8060,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-20" class="prop-row">
   <td style="color:var(--muted)">20</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/ageoshi_ct/detail_1f47e64166613e26bbf2a886ab19900b/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>上尾市本町１丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8078,7 +8082,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-21" class="prop-row">
   <td style="color:var(--muted)">21</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawaguchishi_ct/detail_1b34101a1dda302a84dc1bf4b2e90623/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川口市飯塚</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8100,7 +8104,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-22" class="prop-row">
   <td style="color:var(--muted)">22</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/tsurugashimashi_ct/detail_177610589fbf309799067352903b8f1f/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>鶴ヶ島市脚折町１丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8122,7 +8126,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-23" class="prop-row">
   <td style="color:var(--muted)">23</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/irumashi_ct/detail_405b3d7018693d069de8a51d97886c64/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>入間市高倉</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8144,7 +8148,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-24" class="prop-row">
   <td style="color:var(--muted)">24</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/tsurugashimashi_ct/detail_3c57ec1eb1c83297890b07d006a0228d/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>鶴ヶ島市大字鶴ヶ丘</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8166,7 +8170,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-25" class="prop-row">
   <td style="color:var(--muted)">25</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/wakoshi_ct/detail_42d2f2585a843b64bf832263ab4694cb/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>和光市白子</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8188,7 +8192,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-26" class="prop-row">
   <td style="color:var(--muted)">26</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/irumashi_ct/detail_43925f0e830839b185c3fb3242a21139/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>入間市高倉１丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8210,7 +8214,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-27" class="prop-row">
   <td style="color:var(--muted)">27</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawaguchishi_ct/detail_30145fdc2f3a3edcb85cd458403f53d8/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川口市鳩ヶ谷本町１丁目</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8232,7 +8236,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-28" class="prop-row">
   <td style="color:var(--muted)">28</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/wakoshi_ct/detail_30f2559e65b53d538cc0edb42c085adf/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>和光市諏訪</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8254,7 +8258,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-29" class="prop-row">
   <td style="color:var(--muted)">29</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/yoshikawashi_ct/detail_2e6cfb6849da32be895969bc22c9bf1b/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>吉川市高久</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8276,7 +8280,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-30" class="prop-row">
   <td style="color:var(--muted)">30</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/niizashi_ct/detail_341f3cfa821c31708e6824dabca2cc8c/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>新座市野火止</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8298,7 +8302,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-31" class="prop-row">
   <td style="color:var(--muted)">31</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/asakashi_ct/detail_0ae44e8cacea3c71a8d738212f8b414d/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>朝霞市朝志ケ丘３丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8320,7 +8324,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-32" class="prop-row">
   <td style="color:var(--muted)">32</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/higashimatsuyamashi_ct/detail_07200710380232168f804de3dd5f76c1/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>東松山市和泉町</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8342,7 +8346,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-33" class="prop-row">
   <td style="color:var(--muted)">33</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/irumagummoroyamamachi_ct/detail_096c337b284133afa68ed556b3657d15/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8364,7 +8368,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-34" class="prop-row">
   <td style="color:var(--muted)">34</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/ageoshi_ct/detail_48482fa4f008367693570ece6ca284d2/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>上尾市大字原市</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8386,7 +8390,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-35" class="prop-row">
   <td style="color:var(--muted)">35</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/saitamashiomiyaku_ct/detail_49543dc947e53d1d8796e6da47fbc693/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>さいたま市大宮区上小町</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8408,7 +8412,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-36" class="prop-row">
   <td style="color:var(--muted)">36</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/konosushi_ct/detail_796fee85ecab30ddbc32b8b1ee8a831d/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>鴻巣市吹上富士見1丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8430,7 +8434,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-37" class="prop-row">
   <td style="color:var(--muted)">37</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/konosushi_ct/detail_79ec492d2db43b36b1099afbfdce7535/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>鴻巣市吹上富士見</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8452,7 +8456,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-38" class="prop-row">
   <td style="color:var(--muted)">38</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/saitamashichuoku_ct/detail_6e9f720733b23e76b5243b2120871130/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>さいたま市中央区鈴谷</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8474,7 +8478,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-39" class="prop-row">
   <td style="color:var(--muted)">39</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://www.home-adpark.jp/es/detail.php?tmpl=nifty&category=chuko-ikkodate&pk=000004337_279102_999_0&rail=_&area=1000" target="_blank">詳細</a></td>
   <td class="loc-col"><b>吉川市高久１丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8496,7 +8500,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-40" class="prop-row">
   <td style="color:var(--muted)">40</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/wakoshi_ct/detail_719d2d6c5f3d3cc6b58888a648c53588/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>和光市新倉２丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8518,7 +8522,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-41" class="prop-row">
   <td style="color:var(--muted)">41</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/gyodashi_ct/detail_72b6f7ba50973e00978d97d9577d31a9/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>行田市栄町1-15</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8540,7 +8544,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-42" class="prop-row">
   <td style="color:var(--muted)">42</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kukishi_ct/detail_5832207d74af3c5f8f74a30ce61dee9f/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>久喜市久喜東</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8562,7 +8566,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-43" class="prop-row">
   <td style="color:var(--muted)">43</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kukishi_ct/detail_5927d8ec3dc53d54bbc758bfb42ede9e/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>久喜市北広島</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8584,7 +8588,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-44" class="prop-row">
   <td style="color:var(--muted)">44</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawaguchishi_ct/detail_e5de90abceec3975a4dc9a940c4e858c/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川口市大字東本郷</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8606,7 +8610,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-45" class="prop-row">
   <td style="color:var(--muted)">45</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/irumagunogosemachi_ct/detail_e3b88195440d3f2b9f6b0942c741bde3/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8628,7 +8632,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-46" class="prop-row">
   <td style="color:var(--muted)">46</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/sayamashi_ct/detail_e41a9e66ffb739ae807da12042b3773d/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>狭山市大字水野</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8650,7 +8654,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-47" class="prop-row">
   <td style="color:var(--muted)">47</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kumagayashi_ct/detail_d0d00cee5b4a3dd9b9e7444ff14cf159/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>熊谷市石原</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8672,7 +8676,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-48" class="prop-row">
   <td style="color:var(--muted)">48</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/irumagummoroyamamachi_ct/detail_d1e6a60df6ae398a90c1c994c6d98727/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>不明</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8694,7 +8698,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-49" class="prop-row">
   <td style="color:var(--muted)">49</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/tsurugashimashi_ct/detail_e008cb5615df35ebbdf3633ad7dc7716/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>鶴ヶ島市大字上広谷</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8716,7 +8720,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-50" class="prop-row">
   <td style="color:var(--muted)">50</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/okegawashi_ct/detail_d73efdbc105338c4b212c3a2fa6cca88/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>桶川市泉</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8738,7 +8742,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-51" class="prop-row">
   <td style="color:var(--muted)">51</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawaguchishi_ct/detail_f5ab82f7db1a3159a01a776f77f1559f/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川口市大字安行慈林</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8760,7 +8764,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-52" class="prop-row">
   <td style="color:var(--muted)">52</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawagoeshi_ct/detail_f5f5f2c08eea3226b86c8bcd65f94c96/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川越市三久保町</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8782,7 +8786,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-53" class="prop-row">
   <td style="color:var(--muted)">53</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/honjoshi_ct/detail_ecb211aca5d33ad4b6fa186b70c3932a/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>本庄市児玉町吉田林</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8804,7 +8808,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-54" class="prop-row">
   <td style="color:var(--muted)">54</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/wakoshi_ct/detail_ea55a494a446303d8ec7f1bda56b73f3/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>和光市中央</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8826,7 +8830,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-55" class="prop-row">
   <td style="color:var(--muted)">55</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://www.home-adpark.jp/es/detail.php?tmpl=nifty&category=chuko-ikkodate&pk=000021096_512212_999_0&rail=_&area=1000" target="_blank">詳細</a></td>
   <td class="loc-col"><b>さいたま市桜区西堀６丁目</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8848,7 +8852,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-56" class="prop-row">
   <td style="color:var(--muted)">56</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawaguchishi_ct/detail_eceef7fab3213ab885224fcf3eb21946/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川口市朝日</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8870,7 +8874,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-57" class="prop-row">
   <td style="color:var(--muted)">57</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/fujimishi_ct/detail_ee004dba429f38d982b4499859ddb457/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>富士見市上沢3丁目</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8892,7 +8896,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-58" class="prop-row">
   <td style="color:var(--muted)">58</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/fujimishi_ct/detail_5c19c527cfd936b7986d32285fe071e4/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>富士見市水谷</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8914,7 +8918,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-59" class="prop-row">
   <td style="color:var(--muted)">59</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/wakoshi_ct/detail_651943fbc33c393fb7bbd71151fdb7bc/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>和光市新倉</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -8936,7 +8940,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-60" class="prop-row">
   <td style="color:var(--muted)">60</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/saitamashikitaku_ct/detail_7e5a1631a4ef3df2944527841786e644/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>さいたま市北区櫛引町</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8958,7 +8962,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-61" class="prop-row">
   <td style="color:var(--muted)">61</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/saitamashiminamiku_ct/detail_7c13db6ff6053d1ab48b300580bc63fb/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>さいたま市南区文蔵</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -8980,7 +8984,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-62" class="prop-row">
   <td style="color:var(--muted)">62</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawaguchishi_ct/detail_fdfd4b9adc7a3925a2d90a2a9c8a9885/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川口市芝５丁目</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -9002,7 +9006,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-63" class="prop-row">
   <td style="color:var(--muted)">63</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/koshigayashi_ct/detail_7cee991540b33b53bcbbc7027ae8db07/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>越谷市大沢</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -9024,7 +9028,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-64" class="prop-row">
   <td style="color:var(--muted)">64</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawagoeshi_ct/detail_fcfec4b6bfcb3733bde81b25332612ef/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川越市大字寺尾</b><br><span style="font-size:10px;color:var(--muted)">Dランク</span></td>
@@ -9046,7 +9050,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
   
 </tr>
 
-<tr>
+<tr id="kodate-65" class="prop-row">
   <td style="color:var(--muted)">65</td>
   <td><a class="detail-btn" style="border-color:var(--orange);color:var(--orange)" href="https://myhome.nifty.com/chuko-ikkodate/saitama/kawaguchishi_ct/detail_4de5060c1e9c321182619d6ea964dac5/" target="_blank">詳細</a></td>
   <td class="loc-col"><b>川口市南鳩ヶ谷２丁目</b><br><span style="font-size:10px;color:var(--muted)">Cランク</span></td>
@@ -9269,6 +9273,22 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('qa-input')?.addEventListener('keydown', e => {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendQA(); }
   });
+
+  // ── Deep-link: auto-open analyze pane for ?analyze=<url> from email ──────
+  const params = new URLSearchParams(window.location.search);
+  const analyzeTarget = params.get('analyze');
+  if (analyzeTarget && WORKER_URL) {
+    // Open QA panel on analyze tab
+    setTimeout(() => {
+      if (!qaOpen) toggleQA();
+      switchQATab('analyze');
+      const urlInput = document.getElementById('qa-url-input');
+      if (urlInput) {
+        urlInput.value = decodeURIComponent(analyzeTarget);
+        analyzeUrl();
+      }
+    }, 600);
+  }
 });
 
 // ── Email alert modal ──────────────────────────────────────────────────────
