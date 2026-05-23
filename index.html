@@ -1,1 +1,391 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>rimawari.org</title></head><body><p>Deploying...</p></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TMY3T97HFR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TMY3T97HFR');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>首都圏不動産投資 AI分析レポート</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #ffffff;
+  --bg2: #f7f7f8;
+  --border: #e5e5e5;
+  --green: #10a37f;
+  --green-light: #e6f7f2;
+  --green-dark: #0d8a6a;
+  --text: #0d0d0d;
+  --text2: #6e6e80;
+  --muted: #8e8ea0;
+  --purple: #7c3aed;
+  --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  --card-hover: 0 8px 32px rgba(0,0,0,0.14);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg2);
+  color: var(--text);
+  font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Header ---- */
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 28px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.header h1 .green { color: var(--green); }
+.date-badge {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+  color: var(--text2);
+}
+
+/* ---- Main ---- */
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+.subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.subtitle h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.subtitle p {
+  font-size: 14px;
+  color: var(--text2);
+}
+
+/* ---- Grid ---- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+/* ---- Card ---- */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 28px 24px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--accent, var(--green));
+  border-radius: 16px 16px 0 0;
+}
+.card:hover {
+  box-shadow: var(--card-hover);
+  transform: translateY(-3px);
+  border-color: var(--accent, var(--green));
+}
+.card-tokyo  { --accent: #10a37f; }
+.card-kanagawa { --accent: #2563eb; }
+.card-saitama  { --accent: #d97706; }
+.card-chiba    { --accent: #dc2626; }
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.card-icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  background: var(--icon-bg, var(--green-light));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.card-tokyo   .card-icon { --icon-bg: #e6f7f2; }
+.card-kanagawa .card-icon { --icon-bg: #dbeafe; }
+.card-saitama  .card-icon { --icon-bg: #fef3c7; }
+.card-chiba    .card-icon { --icon-bg: #fef2f2; }
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.card-sub {
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.card-body {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.card-body strong {
+  color: var(--text);
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text2);
+}
+
+.card-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--accent, var(--green));
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.btn:hover { opacity: 0.85; }
+.btn svg { width: 14px; height: 14px; }
+
+.updated-label {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ---- Footer ---- */
+.footer {
+  text-align: center;
+  padding: 32px;
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  background: #fff;
+  margin-top: 0;
+}
+
+/* ---- Password modal ---- */
+.modal-overlay {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.modal-overlay.active { display: flex; }
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.modal h3 { font-size: 18px; margin-bottom: 8px; }
+.modal p { font-size: 13px; color: var(--text2); margin-bottom: 20px; }
+.modal input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  outline: none;
+}
+.modal input:focus { border-color: var(--green); }
+.modal-error { color: #dc2626; font-size: 12px; margin-bottom: 10px; display: none; }
+.modal-btns { display: flex; gap: 8px; }
+.modal-btns button {
+  flex: 1; padding: 10px; border: none; border-radius: 8px;
+  font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.btn-cancel { background: var(--bg2); color: var(--text2); }
+.btn-ok { background: var(--green); color: #fff; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>首都圏不動産投資 <span class="green">AI</span>分析レポート</h1>
+  <span class="date-badge">データ更新日: 2026-05-24</span>
+</div>
+
+<div class="main">
+  <div class="subtitle">
+    <h2>地域を選択してください</h2>
+    <p>一都三県の最新物件データをAIが毎朝分析。土地・中古マンションの投資利回りをチェックできます。</p>
+  </div>
+
+  <div class="grid">
+
+    <a href="tokyo/index.html" class="card card-tokyo" >
+      <div class="card-header">
+        <div class="card-icon">🗼</div>
+        <div>
+          <div class="card-title">東京都</div>
+          <div class="card-sub">Tokyo</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <strong>都内全域</strong>の土地・中古マンションを分析。<br>
+        高利回り物件のランキングとAI投資判断を確認できます。
+      </div>
+      <div class="card-tags">
+        <span class="tag">土地分析</span>
+        <span class="tag">中古マンション</span>
+        <span class="tag">LLM評価</span>
+        <span class="tag">利回りランキング</span>
+      </div>
+      <div class="card-cta">
+        <span class="btn">
+          レポートを見る
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+        <span class="updated-label">毎朝 9:00 更新</span>
+      </div>
+    </a>
+
+    <a href="kanagawa/index.html" class="card card-kanagawa" >
+      <div class="card-header">
+        <div class="card-icon">⛵</div>
+        <div>
+          <div class="card-title">神奈川県</div>
+          <div class="card-sub">Kanagawa</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <strong>横浜・川崎・湘南</strong>エリアの物件を分析。<br>
+        東京隣接の高需要エリアで好利回り物件を発掘します。
+      </div>
+      <div class="card-tags">
+        <span class="tag">土地分析</span>
+        <span class="tag">中古マンション</span>
+        <span class="tag">LLM評価</span>
+        <span class="tag">新着物件</span>
+      </div>
+      <div class="card-cta">
+        <span class="btn" style="background:#2563eb">
+          レポートを見る
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+        <span class="updated-label">毎朝 9:00 更新</span>
+      </div>
+    </a>
+
+    <a href="saitama/index.html" class="card card-saitama" >
+      <div class="card-header">
+        <div class="card-icon">🌸</div>
+        <div>
+          <div class="card-title">埼玉県</div>
+          <div class="card-sub">Saitama</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <strong>さいたま・川口・所沢</strong>エリアの物件を分析。<br>
+        価格帯が手頃で高利回りが狙いやすいエリアです。
+      </div>
+      <div class="card-tags">
+        <span class="tag">土地分析</span>
+        <span class="tag">中古マンション</span>
+        <span class="tag">LLM評価</span>
+        <span class="tag">新着物件</span>
+      </div>
+      <div class="card-cta">
+        <span class="btn" style="background:#d97706">
+          レポートを見る
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+        <span class="updated-label">毎朝 9:00 更新</span>
+      </div>
+    </a>
+
+    <a href="chiba/index.html" class="card card-chiba" >
+      <div class="card-header">
+        <div class="card-icon">🌊</div>
+        <div>
+          <div class="card-title">千葉県</div>
+          <div class="card-sub">Chiba</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <strong>千葉・船橋・柏・浦安</strong>エリアの物件を分析。<br>
+        湾岸エリアから内陸まで幅広い投資機会を提供します。
+      </div>
+      <div class="card-tags">
+        <span class="tag">土地分析</span>
+        <span class="tag">中古マンション</span>
+        <span class="tag">LLM評価</span>
+        <span class="tag">新着物件</span>
+      </div>
+      <div class="card-cta">
+        <span class="btn" style="background:#dc2626">
+          レポートを見る
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+        <span class="updated-label">毎朝 9:00 更新</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<div class="footer">
+  首都圏不動産投資AI分析レポート &nbsp;|&nbsp; データソース：ニフティ不動産 &nbsp;|&nbsp; 2026-05-24 更新<br>
+  <span style="margin-top:4px;display:inline-block">Powered by GPT-4o-mini &nbsp;·&nbsp; 本レポートは投資助言ではありません</span>
+</div>
+
+</body>
+</html>
