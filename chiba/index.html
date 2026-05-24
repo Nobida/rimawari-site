@@ -12424,7 +12424,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLpModal
 
 
 <div class="footer">
-  千葉県不動産投資AI分析レポート &nbsp;|&nbsp; データソース：ニフティ不動産 &nbsp;|&nbsp; 2026-05-24 更新
+  © 2026 rimawari.org &nbsp;|&nbsp; 2026-05-24 更新 &nbsp;|&nbsp; 本レポートは投資助言ではありません
 </div>
 
 </div><!-- container -->
@@ -12810,14 +12810,14 @@ async function submitAlert() {
   <!-- Chat pane: AI Q&A + comments combined -->
   <div id="qa-chat-pane">
     <div id="qa-messages">
-      <div class="qa-msg qa-assistant">こんにちは！千葉県の不動産投資について何でも聞いてください 🏠</div>
+      <div class="qa-msg qa-assistant">こんにちは！このデータについて何でも聞いてください。<br><span style="font-size:11px;color:#8e8ea0">例：「板橋区で利回り4%以上の土地は？」「この物件の修繕リスクは？」「予算3000万で買えるAランク物件を教えて」</span></div>
     </div>
     <div class="qa-input-row">
-      <input id="qa-input" placeholder="例：利回り5%以上の物件は？" >
+      <input id="qa-input" placeholder="気になる物件や条件を入力…" >
       <button onclick="sendQA()" >送信</button>
     </div>
     <hr class="qa-divider">
-    <div class="qa-comment-label">💬 コメント</div>
+    <div class="qa-comment-label">💬 気になった点・改善要望など</div>
     <div id="qa-comment-pane">
       <script src="https://utteranc.es/client.js"
         repo="Nobida/tokyo-property-ai"
