@@ -100,7 +100,7 @@ a:hover { text-decoration: underline; }
   margin-top: 10px;
 }
 
-/* ── Photo placeholder ── */
+/* ── Photo section ── */
 .photo-section { margin-bottom: 16px; }
 .photo-main {
   background: var(--bg2); border: 1px solid var(--border);
@@ -109,6 +109,14 @@ a:hover { text-decoration: underline; }
   justify-content: center; color: var(--muted); font-size: 13px;
 }
 .photo-main a { color: var(--blue); font-weight: 600; font-size: 14px; margin-top: 8px; }
+.photo-gallery { display: flex; gap: 6px; overflow-x: auto; margin-bottom: 4px; }
+.photo-gallery img {
+  height: 240px; width: auto; max-width: 400px;
+  object-fit: cover; border-radius: 4px; cursor: pointer;
+  border: 1px solid var(--border); flex-shrink: 0;
+}
+.photo-gallery img:first-child { height: 280px; }
+.photo-credit { font-size: 11px; color: var(--muted); margin-top: 4px; }
 
 /* ── Main layout ── */
 .main-grid { display: flex; gap: 16px; margin-bottom: 16px; }
@@ -194,6 +202,23 @@ a:hover { text-decoration: underline; }
 .btn-outline { background: #fff; color: var(--text); font-weight: 600; padding: 11px 18px; border-radius: 4px; font-size: 14px; border: 1px solid var(--border); display: inline-block; }
 .btn-outline:hover { background: var(--bg2); text-decoration: none; }
 
+/* ── MLIT エリア成約データ ── */
+.mlit-activity { background: var(--bg2); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; margin-bottom: 14px; }
+.mlit-activity-header { font-weight: 600; font-size: 14px; margin-bottom: 6px; }
+.mlit-activity-desc { font-size: 13px; color: var(--muted); }
+.mlit-badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; font-weight: 600; }
+.mlit-subhead { font-weight: 600; font-size: 13px; color: var(--muted); margin: 12px 0 8px; text-transform: uppercase; letter-spacing: .04em; }
+.mlit-range { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.mlit-range-item { text-align: center; min-width: 70px; }
+.mlit-range-label { display: block; font-size: 10px; color: var(--muted); margin-bottom: 2px; }
+.mlit-range-median { font-weight: 700; font-size: 17px; }
+.mlit-range-sep { color: var(--muted); font-size: 18px; }
+.mlit-vs { background: var(--bg2); border-left: 3px solid var(--green); padding: 8px 12px; border-radius: 0 4px 4px 0; font-size: 13px; margin-top: 4px; }
+.mlit-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.mlit-table th { text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border); color: var(--muted); font-weight: 600; white-space: nowrap; }
+.mlit-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.mlit-table tr:last-child td { border-bottom: none; }
+
 /* ── Footer ── */
 .page-footer { border-top: 1px solid var(--border); padding: 16px 20px; text-align: center; font-size: 12px; color: var(--muted); background: var(--bg2); }
 .page-footer a { color: var(--muted); }
@@ -260,9 +285,6 @@ a:hover { text-decoration: underline; }
   <div class="info-metric"><span class="info-metric-label">建替え利回り</span><span class="info-metric-val">2.5%</span></div>
   <div class="info-metric"><span class="info-metric-label">築年数</span><span class="info-metric-val ">13年</span></div>
   <div class="info-metric"><span class="info-metric-label">再建築</span><span class="info-metric-val up">可</span></div>
-  <div style="margin-top:14px;">
-    <a href="https://myhome.nifty.com/chuko-ikkodate/tokyo/setagayaku_ct/detail_7ba2d8ee69a33ac0817dd9eded62df63/" class="btn-primary" target="_blank" rel="noopener" style="font-size:13px;">元の掲載ページを見る &rarr;</a>
-  </div>
 </div></div>
 </div>
 <div class="section">
@@ -300,6 +322,7 @@ a:hover { text-decoration: underline; }
     <div class="ai-narrative" style="margin-top:12px;">土地81.11㎡を最大活用。容積率200%で延床162.2㎡、1K×6戸が最適。</div>
   </div>
 </div>
+
 <div class="section">
   <div class="section-head">立地情報</div>
   <div class="section-body">
@@ -351,7 +374,6 @@ a:hover { text-decoration: underline; }
   <div class="section-head">アクション</div>
   <div class="section-body">
     <div class="cta-grid">
-      <a href="https://myhome.nifty.com/chuko-ikkodate/tokyo/setagayaku_ct/detail_7ba2d8ee69a33ac0817dd9eded62df63/" class="btn-primary" target="_blank" rel="noopener">元の掲載ページを見る</a>
       <a href="https://rimawari.org/tokyo/" class="btn-outline">東京都の物件一覧</a>
     </div>
   </div>
